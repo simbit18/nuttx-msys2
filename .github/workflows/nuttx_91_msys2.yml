@@ -1,4 +1,4 @@
-name: Nuttx-9.1 MSYS2
+name: Nuttx-9.1.1 MSYS2
 
 permissions:
   ## Allow publishing of GitHub Release
