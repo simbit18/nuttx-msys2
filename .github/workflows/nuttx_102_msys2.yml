@@ -97,6 +97,8 @@ jobs:
           ## Show the GCC version
           gcc -v
 
+          cp -f ./fix/1020/Config.mk tools/Config.mk
+          
           ## Configure the build
           ./tools/configure.sh -g sim:nsh
           
