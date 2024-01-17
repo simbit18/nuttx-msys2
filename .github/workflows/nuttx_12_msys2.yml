@@ -107,7 +107,7 @@ jobs:
           
           ## Preserve the build config
           cp .config nuttxmsys2/nuttx.config
-          make
+          make -j 2
           ls -a
           cp nuttx.exe nuttxmsys2/nuttx.exe
           cp System.map nuttxmsys2/System.map
