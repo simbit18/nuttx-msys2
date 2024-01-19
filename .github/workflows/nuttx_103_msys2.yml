@@ -102,7 +102,7 @@ jobs:
           cp -f ../../fix/1030/up_hostmisc.c arch/sim/src/sim/up_hostmisc.c
           
           ## Configure the build
-          ./tools/configure.sh -g sim:nsh
+          ./tools/configure.sh -g sim:sensor
           
           mkdir nuttxmsys2
           
