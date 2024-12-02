@@ -85,7 +85,7 @@ jobs:
           curl -L https://github.com/simbit18/nuttx/archive/refs/heads/simbit18-103-8a2c480.zip -o simbit18-103-8a2c480.zip
           unzip -qo simbit18-103-8a2c480.zip
           mv nuttx-simbit18-103-8a2c480 nuttx
-          git clone --depth 1 --single-branch --branch nuttx-10.3.0 https://github.com/apache/nuttx-apps.git apps
+          git clone --depth 1 --single-branch --branch nuttx-10.2.0 https://github.com/apache/nuttx-apps.git apps
           ls -a
           cd nuttx
           ls -a
