@@ -81,7 +81,10 @@ jobs:
           # curl -L https://www.apache.org/dyn/closer.lua/incubator/nuttx/10.3.0/apache-nuttx-apps-10.3.0-incubating.tar.gz?action=download -o apps.tar.gz
           # tar zxf nuttx.tar.gz --one-top-level=nuttx --strip-components 1
           # tar zxf apps.tar.gz --one-top-level=apps --strip-components 1
-          git clone --depth 1 --single-branch --branch simbit18-103-8a2c480 https://github.com/simbit18/nuttx.git nuttx
+          # git clone --depth 1 --single-branch --branch simbit18-103-8a2c480 https://github.com/simbit18/nuttx.git nuttx
+          curl -L https://github.com/simbit18/nuttx/archive/refs/heads/simbit18-103-8a2c480.zip -o nuttx.tar.gz
+          tar zxf nuttx.tar.gz --one-top-level=nuttx --strip-components 1
+          
           git clone --depth 1 --single-branch --branch nuttx-10.3.0 https://github.com/apache/nuttx-apps.git apps
           ls -a
           cd nuttx
